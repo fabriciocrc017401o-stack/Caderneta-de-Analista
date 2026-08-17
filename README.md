@@ -1,45 +1,30 @@
 # Caderneta do Analista
 
-Aplicativo pessoal para registrar partidas de futebol ao vivo.
+Aplicativo móvel para registrar e analisar partidas de futebol ao vivo.
 
-## Recursos incluídos
+## Recursos
 
-- Cadastro de competição, data e times.
-- Cadastro das escalações.
+- Cadastro de competição, data, local, equipes e escalações.
 - Cronômetro separado para 1º e 2º tempo.
-- Registro automático do minuto do lance.
-- Acréscimos exibidos como 45+N e 90+N.
-- Gol, escanteio, finalização, finalização no gol, defesa, amarelo, vermelho, falta, impedimento, substituição, VAR, pênalti, lesão e anotação.
-- Seleção rápida dos jogadores cadastrados.
-- Estatísticas atualizadas automaticamente.
-- Linha do tempo.
+- Prorrogação com 1º e 2º tempos extras.
+- Disputa de pênaltis com cobranças convertidas e perdidas.
+- Registro de gols, cartões, faltas, escanteios, impedimentos, finalizações, substituições, VAR, pênaltis, lesões e anotações.
+- Histórico offline salvo no próprio aparelho.
 - Edição e exclusão de lances.
-- Resumo pós-jogo.
-- Análise pós-jogo.
-- Histórico persistente no próprio aparelho.
-- Exclusão de jogos.
-- Configuração EAS para gerar APK Android.
+- Relatório estatístico e compartilhamento.
 
-## Instalação das dependências
-
-Use Node.js e execute:
+## Executar
 
 ```bash
 npm install
-npx expo install --fix
+npx expo start --tunnel
 ```
 
-O `expo install --fix` ajuda a alinhar as versões de pacotes com o SDK Expo instalado.
+Abra o projeto pelo aplicativo Expo Go no Android.
 
-## Gerar APK Android com EAS
+## Gerar APK
 
 ```bash
 npx eas-cli@latest login
 npx eas-cli@latest build --platform android --profile preview
 ```
-
-Na primeira execução, o EAS poderá solicitar a criação/vinculação do projeto e credenciais Android.
-
-## Observação sobre os dados
-
-Os jogos são gravados localmente usando AsyncStorage. Apagar os dados do aplicativo no Android ou desinstalá-lo pode remover esse histórico. Backup em nuvem pode ser adicionado numa próxima versão.

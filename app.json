@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Caderneta do Analista",
+    "slug": "caderneta-do-analista",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.fabricio.cadernetadoanalista",
+      "versionCode": 1
+    },
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}
