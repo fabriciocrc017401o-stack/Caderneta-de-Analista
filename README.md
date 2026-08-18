@@ -1,4 +1,6 @@
-# Caderneta do Analista
+# Caderneta do Analista — versão 1.4.0
+
+Atualização com identidade visual FNS, animações dos lances, avaliação individual das decisões da arbitragem, substituições detalhadas e cronômetro baseado no relógio real, que continua correto ao sair e voltar ao aplicativo.
 
 Aplicativo móvel para registrar e analisar partidas de futebol ao vivo.
 

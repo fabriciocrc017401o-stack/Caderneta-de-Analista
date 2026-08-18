@@ -11,5 +11,7 @@ export type Match = {
   firstHalfAdded?: string; secondHalfAdded?: string; extraFirstAdded?: string; extraSecondAdded?: string;
   refereeRating?: string; assistant1Rating?: string; assistant2Rating?: string; varRating?: string;
   finalAnalysis?: string;
+  livePeriod?: MatchPeriod; elapsedSeconds?: number; timerStartedAt?: number; timerRunning?: boolean;
+  periodStartedAt?: Partial<Record<MatchPeriod, string>>;
   events: MatchEvent[]; createdAt: string; finished: boolean;
 };

@@ -2,12 +2,22 @@
   "expo": {
     "name": "Caderneta do Analista",
     "slug": "caderneta-do-analista",
-    "version": "1.1.0",
+    "version": "1.4.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
+    "icon": "./assets/caderneta-fns.png",
+    "splash": {
+      "image": "./assets/caderneta-fns.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#063D24"
+    },
     "android": {
       "package": "com.fabricio.cadernetadoanalista",
-      "versionCode": 2
+      "versionCode": 5,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/caderneta-fns.png",
+        "backgroundColor": "#063D24"
+      }
     },
     "ios": { "supportsTablet": true },
     "web": { "bundler": "metro" },
